@@ -22,7 +22,7 @@ Since this fork is still in early stages, there will be no versioned releases fo
 
 Everything is expected to be used straight from the repositories.
 
-We are currently targetting cdist power users who already know what they are
+We are currently targeting cdist power users who already know what they are
 doing, so expect some rough edges.
 
 ### Get core with essentials
