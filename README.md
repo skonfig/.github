@@ -6,7 +6,7 @@ fork of [ungleich](https://github.com/ungleich)'s [cdist](https://github.com/ung
 
 Work is split between four repositories:
 
-* **cdist** - documentation, project wide issues etc (this repository). 
+* **cdist** - documentation, project wide issues etc (this repository).
 * [cdist-core](https://github.com/cdist-community/cdist-core) - implementation of the **cdist core**.
 * [cdist-conf](https://github.com/cdist-community/cdist-conf) - **essential** explorers and types.
 * [cdist-extra](https://github.com/cdist-community/cdist-extra) - **non-essential** explorers, types, scripts, tools etc.
@@ -22,33 +22,27 @@ Since this fork is still in early stages, there will be no versioned releases fo
 
 Everything is expected to be used straight from the repositories.
 
-We are currently targeting cdist power users who already know what they are
-doing, so expect some rough edges.
+We are currently targeting cdist power users who already know what they are doing, so expect some rough edges.
 
-### Get core with essentials
-
-```sh
-git clone --recurse-submodules https://github.com/cdist-community/cdist-core
-ln -s "$PWD/cdist-core/bin/cdist" "$HOME/.local/bin/cdist"
-```
-
-**NB** Your `PATH` may not contain `$HOME/.local/bin/`, so modify this line accordingly.
-
-To update `cdist/conf` submodule later:
+### Step 1: Clone repositories
 
 ```sh
-git submodule update --remote cdist/conf
-```
-
-### Get everything
-
-**NB** Don't copy-paste following lines carelessly into your terminal - existing `~/.cdist.cfg` will be overwritten.
-
-```sh
+cd ~/Where/YOU/keep/your_repos/
 git clone https://github.com/cdist-community/cdist-core
 git clone https://github.com/cdist-community/cdist-conf
 git clone https://github.com/cdist-community/cdist-extra
+```
+
+### Step 2: Add `cdist` to `$PATH`
+
+```sh
 ln -s "$PWD/cdist-core/bin/cdist" "$HOME/.local/bin/cdist"
+```
+
+### Step 3: Create configuration directory and file
+
+```sh
+mkdir "$HOME/.cdist"
 cat > "$HOME/.cdist.cfg" << EOF
 [GLOBAL]
 conf_dir = $HOME/.cdist:$PWD/cdist-extra:$PWD/cdist-conf
