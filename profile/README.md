@@ -2,6 +2,6 @@ This is [skonfig](https://skonfig.li), a fork of [ungleich](https://github.com/u
 
 Work is mostly split between three main repositories:
 
-* [skonfig](./skonfig) - implementation of the **skonfig tool** and quick **getting started** bits,
-* [base](./base) - **base** explorers and types,
-* [extra](./extra) - **extra** types (community contributions).
+* [skonfig](/skonfig/skonfig) - implementation of the **skonfig tool** and quick **getting started** bits,
+* [base](/skonfig/base) - **base** explorers and types,
+* [extra](/skonfig/extra) - **extra** types (community contributions).
