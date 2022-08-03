@@ -5,3 +5,5 @@ Work is mostly split between three main repositories:
 * [skonfig](https://github.com/skonfig/skonfig) - implementation of the **skonfig tool** and quick **getting started** bits,
 * [base](https://github.com/skonfig/base) - **base** explorers and types,
 * [extra](https://github.com/skonfig/extra) - **extra** types (community contributions).
+
+Our chat room is `#skonfig:matrix.org` (you need [Matrix client](https://matrix.org/docs/projects/try-matrix-now/)).
